@@ -1,6 +1,6 @@
 # Go WebSocket client
 
-Simple implementation **websocket client** for consumer the **mercadobitcoin** websocket system.
+Simple implementation of a **client** for consumer the **mercadobitcoin** websocket system.
 
 ### Implementation
 * [x] **gorilla/websocket** 
