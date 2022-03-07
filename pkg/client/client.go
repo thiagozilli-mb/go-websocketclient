@@ -113,6 +113,7 @@ func (conn *WebSocketClient) listen() {
 			for {
 				ws := conn.Connect()
 				if ws == nil {
+					conn.log("listen", nil, "No websocket connection")
 					return
 				}
 
@@ -126,6 +127,7 @@ func (conn *WebSocketClient) listen() {
 			}
 		}
 	}
+
 }
 
 func (conn *WebSocketClient) Write(payload interface{}) error {
